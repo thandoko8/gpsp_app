@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9c0d345fe84895e645a473faea1d2aab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9c0d345fe84895e645a473faea1d2aab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9c0d345fe84895e645a473faea1d2aab = L.map(
+                "map_9c0d345fe84895e645a473faea1d2aab",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aeac46e5db89178a9889f0e4cebec5be = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_aeac46e5db89178a9889f0e4cebec5be.addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var marker_c18c3073587dd6efc47c82132559d4a7 = L.marker(
+                [-5.07, 119.53],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_ce2760aa40debe760da2b212dc1cab5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c18c3073587dd6efc47c82132559d4a7.setIcon(icon_ce2760aa40debe760da2b212dc1cab5e);
+        
+    
+        var popup_fb37597634973e4c917736c862c12cf4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0db65cd4520f6256eb53c371307d7333 = $(`<div id="html_0db65cd4520f6256eb53c371307d7333" style="width: 100.0%; height: 100.0%;">ICAO: WAAA<br>Cloud Type: NonCB<br>Long: 119.53<br>Lat: -5.07<br>Band_0: 495.0<br>Band_1: 441.0<br>Band_2: 907.0<br>Band_3: 862.0<br>Band_4: 855.0<br>Predicted: CB <br>Tb(Celcius): -54.61 <br>Tb(Kelvin): 218.39</div>`)[0];
+                popup_fb37597634973e4c917736c862c12cf4.setContent(html_0db65cd4520f6256eb53c371307d7333);
+            
+        
+
+        marker_c18c3073587dd6efc47c82132559d4a7.bindPopup(popup_fb37597634973e4c917736c862c12cf4)
+        ;
+
+        
+    
+    
+            var marker_a512d6ddbc257e43ca81ac05343a82b9 = L.marker(
+                [-8.55, 118.7],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_86acc2a289fe02ddd5b0099d03601bd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a512d6ddbc257e43ca81ac05343a82b9.setIcon(icon_86acc2a289fe02ddd5b0099d03601bd5);
+        
+    
+        var popup_96243105013c1bc2d57176d88f054ef5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_765274541749efe6f2d7e512d11bffaa = $(`<div id="html_765274541749efe6f2d7e512d11bffaa" style="width: 100.0%; height: 100.0%;">ICAO: WADB<br>Cloud Type: CB<br>Long: 118.7<br>Lat: -8.55<br>Band_0: 475.0<br>Band_1: 474.0<br>Band_2: 857.0<br>Band_3: 777.0<br>Band_4: 779.0<br>Predicted: CB <br>Tb(Celcius): -35.28 <br>Tb(Kelvin): 237.72</div>`)[0];
+                popup_96243105013c1bc2d57176d88f054ef5.setContent(html_765274541749efe6f2d7e512d11bffaa);
+            
+        
+
+        marker_a512d6ddbc257e43ca81ac05343a82b9.bindPopup(popup_96243105013c1bc2d57176d88f054ef5)
+        ;
+
+        
+    
+    
+            var marker_4b82f92656030a694d89feb5c8302a4b = L.marker(
+                [-8.73, 115.17],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_50bb9a409dfeddfc62eace499e85fbb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b82f92656030a694d89feb5c8302a4b.setIcon(icon_50bb9a409dfeddfc62eace499e85fbb4);
+        
+    
+        var popup_c4acdb946df48bbb3b62f1a6fb2387c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcea4df29afd57c748319662ca1869d4 = $(`<div id="html_dcea4df29afd57c748319662ca1869d4" style="width: 100.0%; height: 100.0%;">ICAO: WADD<br>Cloud Type: NonCB<br>Long: 115.17<br>Lat: -8.73<br>Band_0: 279.0<br>Band_1: 234.0<br>Band_2: 873.0<br>Band_3: 656.0<br>Band_4: 664.0<br>Predicted: NonCB <br>Tb(Celcius): -14.99 <br>Tb(Kelvin): 258.01</div>`)[0];
+                popup_c4acdb946df48bbb3b62f1a6fb2387c7.setContent(html_dcea4df29afd57c748319662ca1869d4);
+            
+        
+
+        marker_4b82f92656030a694d89feb5c8302a4b.bindPopup(popup_c4acdb946df48bbb3b62f1a6fb2387c7)
+        ;
+
+        
+    
+    
+            var marker_125212e8104951b7c2ca48c021f03696 = L.marker(
+                [-8.75, 116.28],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_9cb45a5324b16f28ed347ebbbbdae5aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_125212e8104951b7c2ca48c021f03696.setIcon(icon_9cb45a5324b16f28ed347ebbbbdae5aa);
+        
+    
+        var popup_813c867affe2c81ea254bf80444b36cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c166b469ac142fe971c208c0a068744 = $(`<div id="html_2c166b469ac142fe971c208c0a068744" style="width: 100.0%; height: 100.0%;">ICAO: WADL<br>Cloud Type: NonCB<br>Long: 116.28<br>Lat: -8.75<br>Band_0: 477.0<br>Band_1: 411.0<br>Band_2: 916.0<br>Band_3: 791.0<br>Band_4: 788.0<br>Predicted: CB <br>Tb(Celcius): -38.07 <br>Tb(Kelvin): 234.93</div>`)[0];
+                popup_813c867affe2c81ea254bf80444b36cf.setContent(html_2c166b469ac142fe971c208c0a068744);
+            
+        
+
+        marker_125212e8104951b7c2ca48c021f03696.bindPopup(popup_813c867affe2c81ea254bf80444b36cf)
+        ;
+
+        
+    
+    
+            var marker_dabe9cd2e056ecbaa53d41163ad33aea = L.marker(
+                [-8.433333333333334, 117.41666666666669],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_3fb021bba3266e7ea9cba7b59bc04371 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dabe9cd2e056ecbaa53d41163ad33aea.setIcon(icon_3fb021bba3266e7ea9cba7b59bc04371);
+        
+    
+        var popup_d78ab0b35065bf6ffc769bd8c8ba41a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f9be3c5a9683c41f4dfb1babb7f74a6 = $(`<div id="html_9f9be3c5a9683c41f4dfb1babb7f74a6" style="width: 100.0%; height: 100.0%;">ICAO: WADS<br>Cloud Type: NonCB<br>Long: 117.41666666666669<br>Lat: -8.433333333333334<br>Band_0: 501.0<br>Band_1: 451.0<br>Band_2: 924.0<br>Band_3: 819.0<br>Band_4: 813.0<br>Predicted: CB <br>Tb(Celcius): -44.04 <br>Tb(Kelvin): 228.96</div>`)[0];
+                popup_d78ab0b35065bf6ffc769bd8c8ba41a4.setContent(html_9f9be3c5a9683c41f4dfb1babb7f74a6);
+            
+        
+
+        marker_dabe9cd2e056ecbaa53d41163ad33aea.bindPopup(popup_d78ab0b35065bf6ffc769bd8c8ba41a4)
+        ;
+
+        
+    
+    
+            var marker_ef5006192d9f7d84e728b6759c9b244f = L.marker(
+                [-2.7, 111.66666666666669],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_c43dac12d46e457cbb3b5237dd604a08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ef5006192d9f7d84e728b6759c9b244f.setIcon(icon_c43dac12d46e457cbb3b5237dd604a08);
+        
+    
+        var popup_57ed3554a4d32826dc43061bdcd0d900 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9e9f7743d201f7e56e700db82e91599 = $(`<div id="html_a9e9f7743d201f7e56e700db82e91599" style="width: 100.0%; height: 100.0%;">ICAO: WAGI<br>Cloud Type: CB<br>Long: 111.66666666666669<br>Lat: -2.7<br>Band_0: 165.0<br>Band_1: 168.0<br>Band_2: 847.0<br>Band_3: 574.0<br>Band_4: 586.0<br>Predicted: NonCB <br>Tb(Celcius): -3.75 <br>Tb(Kelvin): 269.25</div>`)[0];
+                popup_57ed3554a4d32826dc43061bdcd0d900.setContent(html_a9e9f7743d201f7e56e700db82e91599);
+            
+        
+
+        marker_ef5006192d9f7d84e728b6759c9b244f.bindPopup(popup_57ed3554a4d32826dc43061bdcd0d900)
+        ;
+
+        
+    
+    
+            var marker_0801e83613e7d28558ed515b13f7a958 = L.marker(
+                [-2.5, 112.98333333333332],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_b1d632972ac59ba913eab9ddc4e9493b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0801e83613e7d28558ed515b13f7a958.setIcon(icon_b1d632972ac59ba913eab9ddc4e9493b);
+        
+    
+        var popup_8654dffaec5de6b7c90f1d2d5c933fb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55ff59f51e48e8ce9a3d0c52d0ebfdc3 = $(`<div id="html_55ff59f51e48e8ce9a3d0c52d0ebfdc3" style="width: 100.0%; height: 100.0%;">ICAO: WAGS<br>Cloud Type: NonCB<br>Long: 112.98333333333332<br>Lat: -2.5<br>Band_0: 90.0<br>Band_1: 143.0<br>Band_2: 813.0<br>Band_3: 481.0<br>Band_4: 499.0<br>Predicted: NonCB <br>Tb(Celcius): 7.48 <br>Tb(Kelvin): 280.48</div>`)[0];
+                popup_8654dffaec5de6b7c90f1d2d5c933fb4.setContent(html_55ff59f51e48e8ce9a3d0c52d0ebfdc3);
+            
+        
+
+        marker_0801e83613e7d28558ed515b13f7a958.bindPopup(popup_8654dffaec5de6b7c90f1d2d5c933fb4)
+        ;
+
+        
+    
+    
+            var marker_e9b828c1b3626298feb0927170fb9beb = L.marker(
+                [-7.516666666666667, 110.75],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_3ab22354e3d1bc02ee4e8e859769c3f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9b828c1b3626298feb0927170fb9beb.setIcon(icon_3ab22354e3d1bc02ee4e8e859769c3f4);
+        
+    
+        var popup_e4f3b6771d9ee6ec88fabe13a5b6a157 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdf6e18ce1ce67f49ba68050f898f566 = $(`<div id="html_bdf6e18ce1ce67f49ba68050f898f566" style="width: 100.0%; height: 100.0%;">ICAO: WAHQ<br>Cloud Type: NonCB<br>Long: 110.75<br>Lat: -7.516666666666667<br>Band_0: 97.0<br>Band_1: 146.0<br>Band_2: 795.0<br>Band_3: 430.0<br>Band_4: 439.0<br>Predicted: NonCB <br>Tb(Celcius): 13.13 <br>Tb(Kelvin): 286.13</div>`)[0];
+                popup_e4f3b6771d9ee6ec88fabe13a5b6a157.setContent(html_bdf6e18ce1ce67f49ba68050f898f566);
+            
+        
+
+        marker_e9b828c1b3626298feb0927170fb9beb.bindPopup(popup_e4f3b6771d9ee6ec88fabe13a5b6a157)
+        ;
+
+        
+    
+    
+            var marker_baefa9d17ad11ff15ef711a0df017b72 = L.marker(
+                [-6.98, 110.38],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_d5a463b3c3ec511b4731666f46a956d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_baefa9d17ad11ff15ef711a0df017b72.setIcon(icon_d5a463b3c3ec511b4731666f46a956d7);
+        
+    
+        var popup_c174d1801dae2a3fd77e9d8d7c5f03f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cce3de5f7044a23db87c0509a8c31b75 = $(`<div id="html_cce3de5f7044a23db87c0509a8c31b75" style="width: 100.0%; height: 100.0%;">ICAO: WAHS<br>Cloud Type: NonCB<br>Long: 110.38<br>Lat: -6.98<br>Band_0: 356.0<br>Band_1: 362.0<br>Band_2: 960.0<br>Band_3: 898.0<br>Band_4: 878.0<br>Predicted: CB <br>Tb(Celcius): -65.45 <br>Tb(Kelvin): 207.55</div>`)[0];
+                popup_c174d1801dae2a3fd77e9d8d7c5f03f8.setContent(html_cce3de5f7044a23db87c0509a8c31b75);
+            
+        
+
+        marker_baefa9d17ad11ff15ef711a0df017b72.bindPopup(popup_c174d1801dae2a3fd77e9d8d7c5f03f8)
+        ;
+
+        
+    
+    
+            var marker_4238ec93e1fe54efe82e0082e5f91beb = L.marker(
+                [-1.27, 116.9],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_5cd62e3654be7b56bdef48a8f503a109 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4238ec93e1fe54efe82e0082e5f91beb.setIcon(icon_5cd62e3654be7b56bdef48a8f503a109);
+        
+    
+        var popup_dfc5a9838938eb35d8ca080a99906395 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c02e91340b7d4f0b2570a82ae13f52bd = $(`<div id="html_c02e91340b7d4f0b2570a82ae13f52bd" style="width: 100.0%; height: 100.0%;">ICAO: WALL<br>Cloud Type: CB<br>Long: 116.9<br>Lat: -1.27<br>Band_0: 354.0<br>Band_1: 338.0<br>Band_2: 947.0<br>Band_3: 831.0<br>Band_4: 816.0<br>Predicted: NonCB <br>Tb(Celcius): -46.80 <br>Tb(Kelvin): 226.20</div>`)[0];
+                popup_dfc5a9838938eb35d8ca080a99906395.setContent(html_c02e91340b7d4f0b2570a82ae13f52bd);
+            
+        
+
+        marker_4238ec93e1fe54efe82e0082e5f91beb.bindPopup(popup_dfc5a9838938eb35d8ca080a99906395)
+        ;
+
+        
+    
+    
+            var marker_55960cc2aee8960f30d3eddecfe61c74 = L.marker(
+                [-0.6166666666666667, 117.15],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_f2eaf49b618ad34eb6ccea74c2c3f37e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55960cc2aee8960f30d3eddecfe61c74.setIcon(icon_f2eaf49b618ad34eb6ccea74c2c3f37e);
+        
+    
+        var popup_f7edbcdd60c038feb7d6eea47a5bc147 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e967127051cd79373c3c513f6e64cb83 = $(`<div id="html_e967127051cd79373c3c513f6e64cb83" style="width: 100.0%; height: 100.0%;">ICAO: WALS<br>Cloud Type: NonCB<br>Long: 117.15<br>Lat: -0.6166666666666667<br>Band_0: 334.0<br>Band_1: 322.0<br>Band_2: 959.0<br>Band_3: 831.0<br>Band_4: 813.0<br>Predicted: NonCB <br>Tb(Celcius): -46.80 <br>Tb(Kelvin): 226.20</div>`)[0];
+                popup_f7edbcdd60c038feb7d6eea47a5bc147.setContent(html_e967127051cd79373c3c513f6e64cb83);
+            
+        
+
+        marker_55960cc2aee8960f30d3eddecfe61c74.bindPopup(popup_f7edbcdd60c038feb7d6eea47a5bc147)
+        ;
+
+        
+    
+    
+            var marker_c04edd825eceb949b9bb3efebd3d3c3c = L.marker(
+                [0.52, 123.07],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_b9075dffb437c351a8dc81589e5be8db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c04edd825eceb949b9bb3efebd3d3c3c.setIcon(icon_b9075dffb437c351a8dc81589e5be8db);
+        
+    
+        var popup_63c3710d5ea4a82cbc94f9216651cfbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_189a865d6a504ac4aad0f989a0026b46 = $(`<div id="html_189a865d6a504ac4aad0f989a0026b46" style="width: 100.0%; height: 100.0%;">ICAO: WAMG<br>Cloud Type: NonCB<br>Long: 123.07<br>Lat: 0.52<br>Band_0: 524.0<br>Band_1: 506.0<br>Band_2: 862.0<br>Band_3: 726.0<br>Band_4: 724.0<br>Predicted: CB <br>Tb(Celcius): -26.02 <br>Tb(Kelvin): 246.98</div>`)[0];
+                popup_63c3710d5ea4a82cbc94f9216651cfbe.setContent(html_189a865d6a504ac4aad0f989a0026b46);
+            
+        
+
+        marker_c04edd825eceb949b9bb3efebd3d3c3c.bindPopup(popup_63c3710d5ea4a82cbc94f9216651cfbe)
+        ;
+
+        
+    
+    
+            var marker_8155be8eeaaa56591a2cc2d9144bc0ef = L.marker(
+                [1.55, 124.92],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_8beaef24d7dae4c65ba1c66f59797140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8155be8eeaaa56591a2cc2d9144bc0ef.setIcon(icon_8beaef24d7dae4c65ba1c66f59797140);
+        
+    
+        var popup_5b5e0d26ed6e58452f09cba672302c35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_165e631f2f633d4123a4003dcdd6895f = $(`<div id="html_165e631f2f633d4123a4003dcdd6895f" style="width: 100.0%; height: 100.0%;">ICAO: WAMM<br>Cloud Type: CB<br>Long: 124.92<br>Lat: 1.55<br>Band_0: 511.0<br>Band_1: 505.0<br>Band_2: 834.0<br>Band_3: 835.0<br>Band_4: 833.0<br>Predicted: CB <br>Tb(Celcius): -47.75 <br>Tb(Kelvin): 225.25</div>`)[0];
+                popup_5b5e0d26ed6e58452f09cba672302c35.setContent(html_165e631f2f633d4123a4003dcdd6895f);
+            
+        
+
+        marker_8155be8eeaaa56591a2cc2d9144bc0ef.bindPopup(popup_5b5e0d26ed6e58452f09cba672302c35)
+        ;
+
+        
+    
+    
+            var marker_72ebeeb04bc7e70c131e95ba35904341 = L.marker(
+                [-3.4, 116.21666666666668],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_8bea198d7f8ce6a8965975e7aae57aac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_72ebeeb04bc7e70c131e95ba35904341.setIcon(icon_8bea198d7f8ce6a8965975e7aae57aac);
+        
+    
+        var popup_bbea4844838217f5177e6bd5f2d41ab0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c598635c0736c54f14433aa6843b02c = $(`<div id="html_5c598635c0736c54f14433aa6843b02c" style="width: 100.0%; height: 100.0%;">ICAO: WAOK<br>Cloud Type: NonCB<br>Long: 116.21666666666668<br>Lat: -3.4<br>Band_0: 425.0<br>Band_1: 406.0<br>Band_2: 960.0<br>Band_3: 835.0<br>Band_4: 815.0<br>Predicted: CB <br>Tb(Celcius): -47.75 <br>Tb(Kelvin): 225.25</div>`)[0];
+                popup_bbea4844838217f5177e6bd5f2d41ab0.setContent(html_5c598635c0736c54f14433aa6843b02c);
+            
+        
+
+        marker_72ebeeb04bc7e70c131e95ba35904341.bindPopup(popup_bbea4844838217f5177e6bd5f2d41ab0)
+        ;
+
+        
+    
+    
+            var marker_eec8bfa32b696d53210c66f9ff2db0ee = L.marker(
+                [-3.45, 114.77],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_02766e29d352f07ed105b5b13bd17c2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eec8bfa32b696d53210c66f9ff2db0ee.setIcon(icon_02766e29d352f07ed105b5b13bd17c2c);
+        
+    
+        var popup_98f81fadecf731101c717ee5096461e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fe7ccf6bebfc65b45cb93b9f4c12dfd = $(`<div id="html_2fe7ccf6bebfc65b45cb93b9f4c12dfd" style="width: 100.0%; height: 100.0%;">ICAO: WAOO<br>Cloud Type: CB<br>Long: 114.77<br>Lat: -3.45<br>Band_0: 374.0<br>Band_1: 344.0<br>Band_2: 969.0<br>Band_3: 901.0<br>Band_4: 879.0<br>Predicted: CB <br>Tb(Celcius): -66.48 <br>Tb(Kelvin): 206.52</div>`)[0];
+                popup_98f81fadecf731101c717ee5096461e9.setContent(html_2fe7ccf6bebfc65b45cb93b9f4c12dfd);
+            
+        
+
+        marker_eec8bfa32b696d53210c66f9ff2db0ee.bindPopup(popup_98f81fadecf731101c717ee5096461e9)
+        ;
+
+        
+    
+    
+            var marker_78685b9da87b3a0c1b0dc8c7c48fee2e = L.marker(
+                [-4.133333333333334, 117.66666666666669],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_8a53c2cd407e60d87d988a452fe1fc0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78685b9da87b3a0c1b0dc8c7c48fee2e.setIcon(icon_8a53c2cd407e60d87d988a452fe1fc0f);
+        
+    
+        var popup_5c75d5ef9b76e8c201ce3b8922268747 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f960308344238340f37380f788d6237 = $(`<div id="html_4f960308344238340f37380f788d6237" style="width: 100.0%; height: 100.0%;">ICAO: WAQA<br>Cloud Type: NonCB<br>Long: 117.66666666666669<br>Lat: -4.133333333333334<br>Band_0: 246.0<br>Band_1: 245.0<br>Band_2: 926.0<br>Band_3: 760.0<br>Band_4: 754.0<br>Predicted: NonCB <br>Tb(Celcius): -32.05 <br>Tb(Kelvin): 240.95</div>`)[0];
+                popup_5c75d5ef9b76e8c201ce3b8922268747.setContent(html_4f960308344238340f37380f788d6237);
+            
+        
+
+        marker_78685b9da87b3a0c1b0dc8c7c48fee2e.bindPopup(popup_5c75d5ef9b76e8c201ce3b8922268747)
+        ;
+
+        
+    
+    
+            var marker_a9dfdd8f66ffd452169a0cec8ff13d47 = L.marker(
+                [3.33, 117.57],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_c81e204c1cb541ecc67b26471e1747dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a9dfdd8f66ffd452169a0cec8ff13d47.setIcon(icon_c81e204c1cb541ecc67b26471e1747dc);
+        
+    
+        var popup_e8bafe777af3eadec28b8c20f1fdc345 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_229952fcfff8a8bdc01ff6857ad93c6b = $(`<div id="html_229952fcfff8a8bdc01ff6857ad93c6b" style="width: 100.0%; height: 100.0%;">ICAO: WAQQ<br>Cloud Type: NonCB<br>Long: 117.57<br>Lat: 3.33<br>Band_0: 227.0<br>Band_1: 215.0<br>Band_2: 911.0<br>Band_3: 703.0<br>Band_4: 702.0<br>Predicted: NonCB <br>Tb(Celcius): -22.21 <br>Tb(Kelvin): 250.79</div>`)[0];
+                popup_e8bafe777af3eadec28b8c20f1fdc345.setContent(html_229952fcfff8a8bdc01ff6857ad93c6b);
+            
+        
+
+        marker_a9dfdd8f66ffd452169a0cec8ff13d47.bindPopup(popup_e8bafe777af3eadec28b8c20f1fdc345)
+        ;
+
+        
+    
+    
+            var marker_905e39357c6b043e2a9261db02cbe0e9 = L.marker(
+                [2.1166666666666667, 117.45],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_bd96f64f73e0f567379dbf2e5aa19425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_905e39357c6b043e2a9261db02cbe0e9.setIcon(icon_bd96f64f73e0f567379dbf2e5aa19425);
+        
+    
+        var popup_80fdc8c0b214ec95ae13d4820896d060 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_539c80869e966be41374719d61abe4a2 = $(`<div id="html_539c80869e966be41374719d61abe4a2" style="width: 100.0%; height: 100.0%;">ICAO: WAQT<br>Cloud Type: NonCB<br>Long: 117.45<br>Lat: 2.1166666666666667<br>Band_0: 323.0<br>Band_1: 306.0<br>Band_2: 952.0<br>Band_3: 855.0<br>Band_4: 838.0<br>Predicted: NonCB <br>Tb(Celcius): -52.75 <br>Tb(Kelvin): 220.25</div>`)[0];
+                popup_80fdc8c0b214ec95ae13d4820896d060.setContent(html_539c80869e966be41374719d61abe4a2);
+            
+        
+
+        marker_905e39357c6b043e2a9261db02cbe0e9.bindPopup(popup_80fdc8c0b214ec95ae13d4820896d060)
+        ;
+
+        
+    
+    
+            var marker_0b5df65ea16ebf8cbda7dbc08054c5bf = L.marker(
+                [-7.37, 112.78],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_8313dee75c9782ab543795d8942571e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b5df65ea16ebf8cbda7dbc08054c5bf.setIcon(icon_8313dee75c9782ab543795d8942571e4);
+        
+    
+        var popup_f152d3d8b5aad0ec33afd22af6567ebf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7da95ec40a17aa19d5d8971198788baa = $(`<div id="html_7da95ec40a17aa19d5d8971198788baa" style="width: 100.0%; height: 100.0%;">ICAO: WARR<br>Cloud Type: NonCB<br>Long: 112.78<br>Lat: -7.37<br>Band_0: 213.0<br>Band_1: 189.0<br>Band_2: 865.0<br>Band_3: 693.0<br>Band_4: 709.0<br>Predicted: NonCB <br>Tb(Celcius): -20.62 <br>Tb(Kelvin): 252.38</div>`)[0];
+                popup_f152d3d8b5aad0ec33afd22af6567ebf.setContent(html_7da95ec40a17aa19d5d8971198788baa);
+            
+        
+
+        marker_0b5df65ea16ebf8cbda7dbc08054c5bf.bindPopup(popup_f152d3d8b5aad0ec33afd22af6567ebf)
+        ;
+
+        
+    
+    
+            var marker_76bd2eb50c5e84ddf9f328b994f76b10 = L.marker(
+                [-8.633333333333333, 122.23333333333332],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_2dfa6b8223d58044a68dc5d31346c4a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_76bd2eb50c5e84ddf9f328b994f76b10.setIcon(icon_2dfa6b8223d58044a68dc5d31346c4a2);
+        
+    
+        var popup_9184657c3d79e4da89e9667c64790772 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9d83b201ade2c8144c843a155b0410c = $(`<div id="html_d9d83b201ade2c8144c843a155b0410c" style="width: 100.0%; height: 100.0%;">ICAO: WATC<br>Cloud Type: CB<br>Long: 122.23333333333332<br>Lat: -8.633333333333333<br>Band_0: 236.0<br>Band_1: 284.0<br>Band_2: 827.0<br>Band_3: 528.0<br>Band_4: 547.0<br>Predicted: NonCB <br>Tb(Celcius): 1.98 <br>Tb(Kelvin): 274.98</div>`)[0];
+                popup_9184657c3d79e4da89e9667c64790772.setContent(html_d9d83b201ade2c8144c843a155b0410c);
+            
+        
+
+        marker_76bd2eb50c5e84ddf9f328b994f76b10.bindPopup(popup_9184657c3d79e4da89e9667c64790772)
+        ;
+
+        
+    
+    
+            var marker_fdba9120ff852e96ce04737601396947 = L.marker(
+                [-8.85, 121.66666666666669],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_2cd8936dda01221f21802c4020c59805 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fdba9120ff852e96ce04737601396947.setIcon(icon_2cd8936dda01221f21802c4020c59805);
+        
+    
+        var popup_9f77b46794519221bf7a070eab9cb10a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_961811687869355cff09c0a58ae819c6 = $(`<div id="html_961811687869355cff09c0a58ae819c6" style="width: 100.0%; height: 100.0%;">ICAO: WATE<br>Cloud Type: NonCB<br>Long: 121.66666666666669<br>Lat: -8.85<br>Band_0: 288.0<br>Band_1: 220.0<br>Band_2: 785.0<br>Band_3: 528.0<br>Band_4: 559.0<br>Predicted: NonCB <br>Tb(Celcius): 1.98 <br>Tb(Kelvin): 274.98</div>`)[0];
+                popup_9f77b46794519221bf7a070eab9cb10a.setContent(html_961811687869355cff09c0a58ae819c6);
+            
+        
+
+        marker_fdba9120ff852e96ce04737601396947.bindPopup(popup_9f77b46794519221bf7a070eab9cb10a)
+        ;
+
+        
+    
+    
+            var marker_ed8dfd9b05e967fe9c79793612baf75d = L.marker(
+                [-8.633333333333333, 120.45],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_3b07b8e6a16a15a72d7dc27de932f480 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed8dfd9b05e967fe9c79793612baf75d.setIcon(icon_3b07b8e6a16a15a72d7dc27de932f480);
+        
+    
+        var popup_6250a6fa1794bfca6a5a24c1335b0a13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09a6f1c0ad8878e76ac91dc1619c4112 = $(`<div id="html_09a6f1c0ad8878e76ac91dc1619c4112" style="width: 100.0%; height: 100.0%;">ICAO: WATG<br>Cloud Type: NonCB<br>Long: 120.45<br>Lat: -8.633333333333333<br>Band_0: 252.0<br>Band_1: 211.0<br>Band_2: 831.0<br>Band_3: 598.0<br>Band_4: 615.0<br>Predicted: NonCB <br>Tb(Celcius): -6.89 <br>Tb(Kelvin): 266.11</div>`)[0];
+                popup_6250a6fa1794bfca6a5a24c1335b0a13.setContent(html_09a6f1c0ad8878e76ac91dc1619c4112);
+            
+        
+
+        marker_ed8dfd9b05e967fe9c79793612baf75d.bindPopup(popup_6250a6fa1794bfca6a5a24c1335b0a13)
+        ;
+
+        
+    
+    
+            var marker_40690ef37742cb1610b992f8ae0d25e2 = L.marker(
+                [-8.266666666666667, 122.96666666666668],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_b94236db72a466cb6192ab1ea01816df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_40690ef37742cb1610b992f8ae0d25e2.setIcon(icon_b94236db72a466cb6192ab1ea01816df);
+        
+    
+        var popup_1ceacba599e553897eb54d407a0f8bfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10fe9241b9b6e3be5b2af309054824e9 = $(`<div id="html_10fe9241b9b6e3be5b2af309054824e9" style="width: 100.0%; height: 100.0%;">ICAO: WATL<br>Cloud Type: NonCB<br>Long: 122.96666666666668<br>Lat: -8.266666666666667<br>Band_0: 323.0<br>Band_1: 254.0<br>Band_2: 788.0<br>Band_3: 562.0<br>Band_4: 588.0<br>Predicted: NonCB <br>Tb(Celcius): -2.22 <br>Tb(Kelvin): 270.78</div>`)[0];
+                popup_1ceacba599e553897eb54d407a0f8bfb.setContent(html_10fe9241b9b6e3be5b2af309054824e9);
+            
+        
+
+        marker_40690ef37742cb1610b992f8ae0d25e2.bindPopup(popup_1ceacba599e553897eb54d407a0f8bfb)
+        ;
+
+        
+    
+    
+            var marker_ec9ecf6f4719c4883331703dd4e41230 = L.marker(
+                [-8.483333333333333, 119.88333333333334],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_2edce9e8f636e368fd4115c6ccb9a964 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ec9ecf6f4719c4883331703dd4e41230.setIcon(icon_2edce9e8f636e368fd4115c6ccb9a964);
+        
+    
+        var popup_34346194bcacbbe8b1183bf1b6a6195d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06040d4263b73f8459366d0af8fbc5dc = $(`<div id="html_06040d4263b73f8459366d0af8fbc5dc" style="width: 100.0%; height: 100.0%;">ICAO: WATO<br>Cloud Type: NonCB<br>Long: 119.88333333333334<br>Lat: -8.483333333333333<br>Band_0: 268.0<br>Band_1: 320.0<br>Band_2: 851.0<br>Band_3: 637.0<br>Band_4: 651.0<br>Predicted: NonCB <br>Tb(Celcius): -12.24 <br>Tb(Kelvin): 260.76</div>`)[0];
+                popup_34346194bcacbbe8b1183bf1b6a6195d.setContent(html_06040d4263b73f8459366d0af8fbc5dc);
+            
+        
+
+        marker_ec9ecf6f4719c4883331703dd4e41230.bindPopup(popup_34346194bcacbbe8b1183bf1b6a6195d)
+        ;
+
+        
+    
+    
+            var marker_77074cdfc0d186719feaba862770141b = L.marker(
+                [-10.5, 121.83333333333331],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_ca86fed80dbcbc68d4f248d6a7eaf52d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_77074cdfc0d186719feaba862770141b.setIcon(icon_ca86fed80dbcbc68d4f248d6a7eaf52d);
+        
+    
+        var popup_3c4c37f92a5155178d29633d5a16c1ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b66ef2cee2f5fd6f1682e2ac6b44cdc3 = $(`<div id="html_b66ef2cee2f5fd6f1682e2ac6b44cdc3" style="width: 100.0%; height: 100.0%;">ICAO: WATS<br>Cloud Type: NonCB<br>Long: 121.83333333333331<br>Lat: -10.5<br>Band_0: 481.0<br>Band_1: 380.0<br>Band_2: 745.0<br>Band_3: 570.0<br>Band_4: 590.0<br>Predicted: NonCB <br>Tb(Celcius): -3.24 <br>Tb(Kelvin): 269.76</div>`)[0];
+                popup_3c4c37f92a5155178d29633d5a16c1ca.setContent(html_b66ef2cee2f5fd6f1682e2ac6b44cdc3);
+            
+        
+
+        marker_77074cdfc0d186719feaba862770141b.bindPopup(popup_3c4c37f92a5155178d29633d5a16c1ca)
+        ;
+
+        
+    
+    
+            var marker_a6e9fad0cbf26f605eb71ddfab2fe3b9 = L.marker(
+                [-10.17, 123.67],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_905826bbc37b02217795e6e4026a23dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6e9fad0cbf26f605eb71ddfab2fe3b9.setIcon(icon_905826bbc37b02217795e6e4026a23dc);
+        
+    
+        var popup_d94e24bd5579171e544df10cf0a76eeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86d04ed49fb6dee207059b6bfbf8f0a8 = $(`<div id="html_86d04ed49fb6dee207059b6bfbf8f0a8" style="width: 100.0%; height: 100.0%;">ICAO: WATT<br>Cloud Type: CB<br>Long: 123.67<br>Lat: -10.17<br>Band_0: 524.0<br>Band_1: 493.0<br>Band_2: 790.0<br>Band_3: 760.0<br>Band_4: 766.0<br>Predicted: CB <br>Tb(Celcius): -32.05 <br>Tb(Kelvin): 240.95</div>`)[0];
+                popup_d94e24bd5579171e544df10cf0a76eeb.setContent(html_86d04ed49fb6dee207059b6bfbf8f0a8);
+            
+        
+
+        marker_a6e9fad0cbf26f605eb71ddfab2fe3b9.bindPopup(popup_d94e24bd5579171e544df10cf0a76eeb)
+        ;
+
+        
+    
+    
+            var marker_cf92c00e0c5dd2b3fa261bfe645997d3 = L.marker(
+                [-4.1, 122.43333333333334],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_84556205785b50e6c85b300794b9d5d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cf92c00e0c5dd2b3fa261bfe645997d3.setIcon(icon_84556205785b50e6c85b300794b9d5d1);
+        
+    
+        var popup_a8edf0b3bf81e3b22cd1d023c5b0f4cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2909b089a78e90fe16fb83e1279278e = $(`<div id="html_b2909b089a78e90fe16fb83e1279278e" style="width: 100.0%; height: 100.0%;">ICAO: WAWW<br>Cloud Type: CB<br>Long: 122.43333333333334<br>Lat: -4.1<br>Band_0: 469.0<br>Band_1: 423.0<br>Band_2: 902.0<br>Band_3: 753.0<br>Band_4: 743.0<br>Predicted: CB <br>Tb(Celcius): -30.77 <br>Tb(Kelvin): 242.23</div>`)[0];
+                popup_a8edf0b3bf81e3b22cd1d023c5b0f4cd.setContent(html_b2909b089a78e90fe16fb83e1279278e);
+            
+        
+
+        marker_cf92c00e0c5dd2b3fa261bfe645997d3.bindPopup(popup_a8edf0b3bf81e3b22cd1d023c5b0f4cd)
+        ;
+
+        
+    
+    
+            var marker_87a1741d0d96f7441bcf556337ce7bee = L.marker(
+                [1.12, 104.12],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_fab2039c3053ea1e22b9f4b0e21dfe77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87a1741d0d96f7441bcf556337ce7bee.setIcon(icon_fab2039c3053ea1e22b9f4b0e21dfe77);
+        
+    
+        var popup_21c44bb1b7f75cc531e62b2613a235e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_258dc2e0ae59f428554ee574d602dffd = $(`<div id="html_258dc2e0ae59f428554ee574d602dffd" style="width: 100.0%; height: 100.0%;">ICAO: WIDD<br>Cloud Type: NonCB<br>Long: 104.12<br>Lat: 1.12<br>Band_0: 185.0<br>Band_1: 184.0<br>Band_2: 977.0<br>Band_3: 889.0<br>Band_4: 867.0<br>Predicted: NonCB <br>Tb(Celcius): -62.51 <br>Tb(Kelvin): 210.49</div>`)[0];
+                popup_21c44bb1b7f75cc531e62b2613a235e9.setContent(html_258dc2e0ae59f428554ee574d602dffd);
+            
+        
+
+        marker_87a1741d0d96f7441bcf556337ce7bee.bindPopup(popup_21c44bb1b7f75cc531e62b2613a235e9)
+        ;
+
+        
+    
+    
+            var marker_048b5308436784279a4173a4a2710b25 = L.marker(
+                [0.92, 104.52],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_ddbae70c6c8e1d03697a46bb91563f4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_048b5308436784279a4173a4a2710b25.setIcon(icon_ddbae70c6c8e1d03697a46bb91563f4c);
+        
+    
+        var popup_e1fd035747f0e68858b615b2ac04194e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f330a0aadd125d2958e0c0caea7a2cfc = $(`<div id="html_f330a0aadd125d2958e0c0caea7a2cfc" style="width: 100.0%; height: 100.0%;">ICAO: WIDN<br>Cloud Type: NonCB<br>Long: 104.52<br>Lat: 0.92<br>Band_0: 272.0<br>Band_1: 260.0<br>Band_2: 973.0<br>Band_3: 861.0<br>Band_4: 841.0<br>Predicted: NonCB <br>Tb(Celcius): -54.34 <br>Tb(Kelvin): 218.66</div>`)[0];
+                popup_e1fd035747f0e68858b615b2ac04194e.setContent(html_f330a0aadd125d2958e0c0caea7a2cfc);
+            
+        
+
+        marker_048b5308436784279a4173a4a2710b25.bindPopup(popup_e1fd035747f0e68858b615b2ac04194e)
+        ;
+
+        
+    
+    
+            var marker_ea37de37d5e52649073d704862bd1ed4 = L.marker(
+                [-6.25, 106.88],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_87f26caf7bc66579ce5654a5672e690c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea37de37d5e52649073d704862bd1ed4.setIcon(icon_87f26caf7bc66579ce5654a5672e690c);
+        
+    
+        var popup_de14d8939fe207d3a9016b4c8ccf3347 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb295ec28c09e83d360fafcfd16004f5 = $(`<div id="html_eb295ec28c09e83d360fafcfd16004f5" style="width: 100.0%; height: 100.0%;">ICAO: WIHH<br>Cloud Type: NonCB<br>Long: 106.88<br>Lat: -6.25<br>Band_0: 145.0<br>Band_1: 185.0<br>Band_2: 835.0<br>Band_3: 555.0<br>Band_4: 567.0<br>Predicted: NonCB <br>Tb(Celcius): -1.34 <br>Tb(Kelvin): 271.66</div>`)[0];
+                popup_de14d8939fe207d3a9016b4c8ccf3347.setContent(html_eb295ec28c09e83d360fafcfd16004f5);
+            
+        
+
+        marker_ea37de37d5e52649073d704862bd1ed4.bindPopup(popup_de14d8939fe207d3a9016b4c8ccf3347)
+        ;
+
+        
+    
+    
+            var marker_4437650ec1a44e706fc620c88067262e = L.marker(
+                [-6.13, 106.67],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_ce792f6ff0fd48acf84162628d628609 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4437650ec1a44e706fc620c88067262e.setIcon(icon_ce792f6ff0fd48acf84162628d628609);
+        
+    
+        var popup_a0d4cbf91d7ec061c8558f0b42ff7990 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e85384f1ddef0790ffefde3a7d8c818 = $(`<div id="html_6e85384f1ddef0790ffefde3a7d8c818" style="width: 100.0%; height: 100.0%;">ICAO: WIII<br>Cloud Type: NonCB<br>Long: 106.67<br>Lat: -6.13<br>Band_0: 165.0<br>Band_1: 194.0<br>Band_2: 875.0<br>Band_3: 637.0<br>Band_4: 643.0<br>Predicted: NonCB <br>Tb(Celcius): -12.24 <br>Tb(Kelvin): 260.76</div>`)[0];
+                popup_a0d4cbf91d7ec061c8558f0b42ff7990.setContent(html_6e85384f1ddef0790ffefde3a7d8c818);
+            
+        
+
+        marker_4437650ec1a44e706fc620c88067262e.bindPopup(popup_a0d4cbf91d7ec061c8558f0b42ff7990)
+        ;
+
+        
+    
+    
+            var marker_d29de36a830d761761a53f7842963aef = L.marker(
+                [-2.17, 106.13],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_f468ae07f9ce00409206e4f4592046f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d29de36a830d761761a53f7842963aef.setIcon(icon_f468ae07f9ce00409206e4f4592046f8);
+        
+    
+        var popup_6a92426e098e2b5e3f29be44879e5f8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e46193f769d893f38ddaaa0c50778727 = $(`<div id="html_e46193f769d893f38ddaaa0c50778727" style="width: 100.0%; height: 100.0%;">ICAO: WIKK<br>Cloud Type: NonCB<br>Long: 106.13<br>Lat: -2.17<br>Band_0: 260.0<br>Band_1: 222.0<br>Band_2: 919.0<br>Band_3: 652.0<br>Band_4: 641.0<br>Predicted: NonCB <br>Tb(Celcius): -14.40 <br>Tb(Kelvin): 258.60</div>`)[0];
+                popup_6a92426e098e2b5e3f29be44879e5f8f.setContent(html_e46193f769d893f38ddaaa0c50778727);
+            
+        
+
+        marker_d29de36a830d761761a53f7842963aef.bindPopup(popup_6a92426e098e2b5e3f29be44879e5f8f)
+        ;
+
+        
+    
+    
+            var marker_6cb252a317d24970adbb77c2f215efcd = L.marker(
+                [-1.85, 109.97],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_a6405853e1d8b8fb2ab2126ba9d865a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6cb252a317d24970adbb77c2f215efcd.setIcon(icon_a6405853e1d8b8fb2ab2126ba9d865a2);
+        
+    
+        var popup_0c783ab4129b5561e3e43d30bad259e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_889a3015e76d907b841bb325ad17d4a8 = $(`<div id="html_889a3015e76d907b841bb325ad17d4a8" style="width: 100.0%; height: 100.0%;">ICAO: WIOK<br>Cloud Type: NonCB<br>Long: 109.97<br>Lat: -1.85<br>Band_0: 132.0<br>Band_1: 171.0<br>Band_2: 847.0<br>Band_3: 584.0<br>Band_4: 600.0<br>Predicted: NonCB <br>Tb(Celcius): -5.04 <br>Tb(Kelvin): 267.96</div>`)[0];
+                popup_0c783ab4129b5561e3e43d30bad259e3.setContent(html_889a3015e76d907b841bb325ad17d4a8);
+            
+        
+
+        marker_6cb252a317d24970adbb77c2f215efcd.bindPopup(popup_0c783ab4129b5561e3e43d30bad259e3)
+        ;
+
+        
+    
+    
+            var marker_3c5b4bfaf0587219283a53adc85cb216 = L.marker(
+                [-0.15, 109.4],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_d36e3015db36b6adba6bb246981cff89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c5b4bfaf0587219283a53adc85cb216.setIcon(icon_d36e3015db36b6adba6bb246981cff89);
+        
+    
+        var popup_76517cb1ea577c9d68b2c63dc22b4631 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_511df5d8f2fc893360042a1fed5cd675 = $(`<div id="html_511df5d8f2fc893360042a1fed5cd675" style="width: 100.0%; height: 100.0%;">ICAO: WIOO<br>Cloud Type: NonCB<br>Long: 109.4<br>Lat: -0.15<br>Band_0: 218.0<br>Band_1: 216.0<br>Band_2: 955.0<br>Band_3: 805.0<br>Band_4: 791.0<br>Predicted: NonCB <br>Tb(Celcius): -40.98 <br>Tb(Kelvin): 232.02</div>`)[0];
+                popup_76517cb1ea577c9d68b2c63dc22b4631.setContent(html_511df5d8f2fc893360042a1fed5cd675);
+            
+        
+
+        marker_3c5b4bfaf0587219283a53adc85cb216.bindPopup(popup_76517cb1ea577c9d68b2c63dc22b4631)
+        ;
+
+        
+    
+    
+            var marker_2194870be03f963b4bd9e1bcb6ffa632 = L.marker(
+                [0.12, 111.52],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_2f686aaa6f2763e5077559ac62c2f30b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2194870be03f963b4bd9e1bcb6ffa632.setIcon(icon_2f686aaa6f2763e5077559ac62c2f30b);
+        
+    
+        var popup_3f4914a11f1e701daa00ecc12aacdc2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c02f971b1fa14f6691c9f3d24cdc7a56 = $(`<div id="html_c02f971b1fa14f6691c9f3d24cdc7a56" style="width: 100.0%; height: 100.0%;">ICAO: WIOS<br>Cloud Type: NonCB<br>Long: 111.52<br>Lat: 0.12<br>Band_0: 313.0<br>Band_1: 287.0<br>Band_2: 978.0<br>Band_3: 906.0<br>Band_4: 886.0<br>Predicted: NonCB <br>Tb(Celcius): -68.24 <br>Tb(Kelvin): 204.76</div>`)[0];
+                popup_3f4914a11f1e701daa00ecc12aacdc2e.setContent(html_c02f971b1fa14f6691c9f3d24cdc7a56);
+            
+        
+
+        marker_2194870be03f963b4bd9e1bcb6ffa632.bindPopup(popup_3f4914a11f1e701daa00ecc12aacdc2e)
+        ;
+
+        
+    
+    
+            var marker_b954fdd12499eb1a2fd1eb39ef6b75e4 = L.marker(
+                [-2.88, 104.7],
+                {}
+            ).addTo(map_9c0d345fe84895e645a473faea1d2aab);
+        
+    
+            var icon_52ad148d7f19560f39d85822dc9ee931 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b954fdd12499eb1a2fd1eb39ef6b75e4.setIcon(icon_52ad148d7f19560f39d85822dc9ee931);
+        
+    
+        var popup_09de7f42028cafc90593a1af909b104a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67004efe949592312295eb70221fb10d = $(`<div id="html_67004efe949592312295eb70221fb10d" style="width: 100.0%; height: 100.0%;">ICAO: WIPP<br>Cloud Type: NonCB<br>Long: 104.7<br>Lat: -2.88<br>Band_0: 214.0<br>Band_1: 211.0<br>Band_2: 943.0<br>Band_3: 818.0<br>Band_4: 805.0<br>Predicted: NonCB <br>Tb(Celcius): -43.82 <br>Tb(Kelvin): 229.18</div>`)[0];
+                popup_09de7f42028cafc90593a1af909b104a.setContent(html_67004efe949592312295eb70221fb10d);
+            
+        
+
+        marker_b954fdd12499eb1a2fd1eb39ef6b75e4.bindPopup(popup_09de7f42028cafc90593a1af909b104a)
+        ;
+
+        
+    
+</script>
+</html>

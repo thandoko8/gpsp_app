@@ -3,11 +3,5 @@
         "src": "gpsp_project/wsgi.py",
         "use" : "@vercel/python",
         "config" : {"maxLambdaSize" : "15mb", "runtime": "python3.9"}
-    }],
-    "routers":[
-        {
-            "src" : "/(.*)",
-            "dest" : "gpsp_project/wsgi.py"
-        }
-    ]
+    }]
 }
